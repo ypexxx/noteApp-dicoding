@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0px auto;
+}
+
+/* notebox_item */
+.notebox_item li {
+    background-color: azure;
+    border: 1px solid black;
+    width: 300px;
+    border-radius: 8px;
+    margin: 16px;
+    padding: 8px;
+}
+
+
+.button_delete {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.button_arsip {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 8px;
+    padding: 2px;
+}
