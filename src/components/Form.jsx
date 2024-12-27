@@ -5,13 +5,17 @@ import Form_Submit_Button from "./Form_Submit_Button";
 
 function Form() {
     return (
-        <div className='max-w-[1024px] my-0 mx-auto'>
-            <h1>Form Input</h1>
-            <form action=''>
-                <Form_Title/>
-                <Form_Description/>
-                <Form_Submit_Button/>
-            </form>
+        <div className='container mb-10'>
+            <div className='flex justify-center'>
+                <div className=''>
+                    <h1>Form Input</h1>
+                    <form action='' className='container md:min-w-[768px]'>
+                        <Form_Title/>
+                        <Form_Description/>
+                        <Form_Submit_Button/>
+                    </form>
+                </div>
+            </div>
         </div>
     );
 }
