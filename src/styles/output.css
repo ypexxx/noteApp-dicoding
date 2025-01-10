@@ -588,37 +588,21 @@ video {
   }
 }
 
-.m-8 {
-  margin: 2rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
 }
 
 .mb-10 {
   margin-bottom: 2.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .flex {
   display: flex;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
-.h-20 {
-  height: 5rem;
 }
 
 .h-24 {
@@ -627,10 +611,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .flex-wrap {
@@ -662,10 +642,6 @@ video {
   padding: 0.5rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -679,7 +655,7 @@ body {
 
 /* notebox_item */
 
-.notebox_item li {
+.notebox_list li {
   background-color: azure;
   border: 1px solid black;
   width: 300px;

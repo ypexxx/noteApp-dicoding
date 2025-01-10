@@ -1,9 +1,9 @@
 import React from "react";
 
-function Form_Submit_Button() {
+function Form_Submit_Button({onSubmitHandler}) {
     return (
         <div>
-            <button className='border-solid border-black border-2'>Kirim!</button>
+            <button className='border-solid border-black border-2' onClick={onSubmitHandler}>Kirim!</button>
         </div>
     );
 }
