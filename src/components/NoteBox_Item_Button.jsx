@@ -1,14 +1,10 @@
 import React from "react";
 
-function NoteBox_Item_Button() {
-    function contentButton(event) {
-        return buttonText = event.target.textContent;
-    }
-
+function NoteBox_Item_Button({onDelete, onArchive, id}) {
     return (
         <div>
-            <button type='button' onClick={contentButton} className='button_delete'>Delete</button>
-            <button type='button' className='button_arsip'>Arsip</button>
+            <button type='button' onClick={() => onDelete(id)} className='button_delete'>Delete</button>
+            <button type='button' onClick={() => onArchive(id)} className='button_arsip'>Arsip</button>
         </div>
     );
 }

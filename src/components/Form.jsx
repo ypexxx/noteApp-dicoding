@@ -6,9 +6,13 @@ import Form_Submit_Button from "./Form_Submit_Button";
 function Form({onAddContentHandler}) {
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
+    const [titleCount, setTitleCount] = useState("15");
 
     const onAddTitle = (event) => {
-        setTitle(event.target.value);
+        const input = event.target.value;
+        setTitle(input);
+        const count = 15 - input.length;
+        setTitleCount(count);
     }
 
     const onAddBody = (event) => {
@@ -21,12 +25,12 @@ function Form({onAddContentHandler}) {
     } 
 
     return (
-        <div className='container mb-10'>
+        <div className='mb-10 bg-slate-50'>
             <div className='flex justify-center'>
-                <div className=''>
-                    <h1>Form Input</h1>
-                    <form action='' className='container md:min-w-[768px]' onSubmit={onSubmitHandler}>
-                        <Form_Title onAddTitle={onAddTitle}/>
+                <div className='w-[100%] px-5'>
+                    <h1 className='mb-2 p-2 text-center'>Form Input</h1>
+                    <form action='' className='' onSubmit={onSubmitHandler}>
+                        <Form_Title onAddTitle={onAddTitle} titleCount={titleCount}/>
                         <Form_Body onAddBody={onAddBody}/>
                         <Form_Submit_Button onSubmitHandler={onSubmitHandler}/>
                     </form>
