@@ -6,13 +6,16 @@ import Form_Submit_Button from "./Form_Submit_Button";
 function Form({onAddContentHandler}) {
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
-    const [titleCount, setTitleCount] = useState("15");
+    const [titleCount, setTitleCount] = useState("50");
 
     const onAddTitle = (event) => {
         const input = event.target.value;
-        setTitle(input);
-        const count = 15 - input.length;
-        setTitleCount(count);
+        const inputSlice = input.slice(0,50);
+        setTitle(inputSlice);
+
+        if(titleCount > 0) {
+            setTitleCount(titleCount - 1)
+        }
     }
 
     const onAddBody = (event) => {

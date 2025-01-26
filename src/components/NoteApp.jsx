@@ -13,6 +13,7 @@ function NoteApp() {
 
     const createDate = () => {
         const now = new Date();
+        now.toISOString();
         const day = now.getDate();
         const month = now.getMonth() + 1;
         const year = now.getFullYear();
@@ -20,9 +21,9 @@ function NoteApp() {
     }
 
     const setId = () => {
-        let lastId = datas[datas.length -1].id;
-        let currentId = lastId + 1;
-        return currentId;
+        let timestamp = Date.now();
+        let id = Number(timestamp);
+        return id;
     }
 
     const onDelete = (id) => {
@@ -68,6 +69,7 @@ function NoteApp() {
                 ]
         )
     }
+
     return (
         <div className=''>
             {console.log(datas)}

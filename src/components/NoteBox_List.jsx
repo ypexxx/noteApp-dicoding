@@ -3,6 +3,7 @@ import NoteBox_Item from "./NoteBox_Item";
 
 function NoteBox_List( {datas, onDelete, onArchive} ) {
     const unArchivedData = datas.filter(data => !data.archived);
+
     return (
         <div className=''>
             <div>
@@ -10,7 +11,7 @@ function NoteBox_List( {datas, onDelete, onArchive} ) {
                 {unArchivedData.map((data) => {
                     return (
                         <li key={data.id}>
-                        <NoteBox_Item title={data.title} body={data.body} onDelete={onDelete} onArchive={onArchive} id={data.id} />
+                        <NoteBox_Item title={data.title} createdAt={data.createdAt} body={data.body} onDelete={onDelete} onArchive={onArchive} id={data.id} />
                         </li>
                     )
                 })}

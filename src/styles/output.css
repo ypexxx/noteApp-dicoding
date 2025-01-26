@@ -563,12 +563,20 @@ video {
   margin-right: auto;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .inline {
@@ -601,6 +609,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.break-words {
+  overflow-wrap: break-word;
 }
 
 .rounded-2xl {
@@ -671,18 +683,23 @@ video {
   text-align: center;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
 
 .text-slate-500 {
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity, 1));
-}
-
-.text-slate-100 {
-  --tw-text-opacity: 1;
-  color: rgb(241 245 249 / var(--tw-text-opacity, 1));
 }
 
 .filter {
@@ -706,8 +723,8 @@ html {
 
 .notebox_item {
   background-color: azure;
-  border: 1px solid black;
-  width: 160px;
+  border: 1px solid rgb(226, 226, 226);
+  width: 230px;
   border-radius: 8px;
   margin: 8px;
   padding: 8px;
@@ -723,13 +740,15 @@ html {
 } */
 
 .button_delete {
-  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(197, 197, 197);
   border-radius: 5px;
   padding: 2px;
 }
 
 .button_arsip {
-  border: 1px solid black;
+  background-color: white;
+  border: 1px solid rgb(197, 197, 197);
   border-radius: 5px;
   margin: 8px;
   padding: 2px;
@@ -737,7 +756,7 @@ html {
 
 /* Largest Screen */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   html {
     font-size: 14px;
   }
@@ -745,8 +764,15 @@ html {
 
 /* Small Screen */
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   html {
     font-size: 12px;
+  }
+
+  .notebox_item {
+    width: 160px;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 8px;
   }
 }
