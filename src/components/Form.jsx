@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import Form_Title from "./Form_title";
+import Form_Title from "./Form_Title";
 import Form_Body from "./Form_Body";
 import Form_Submit_Button from "./Form_Submit_Button";
 
