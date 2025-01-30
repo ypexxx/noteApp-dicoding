@@ -21,11 +21,12 @@ html {
 /* notebox_item */
 .notebox_item {
     background-color: azure;
-    border: 1px solid rgb(226, 226, 226);
+    border: 1px solid rgb(182, 182, 182);
     width: 230px;
     border-radius: 8px;
     margin: 8px;
     padding: 8px;
+    box-shadow: 1px 1px 5px rgb(209, 209, 209);
 }
 
 /* .notebox_list li {
@@ -38,18 +39,37 @@ html {
 } */
 
 .button_delete {
+    background-color: #ffeeee;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    padding: 2px;
+    margin-right: 4px;
+    width: 70%;
+}
+
+.button_arsip {
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(197, 197, 197);
     border-radius: 5px;
     padding: 2px;
+    width: 30%;
 }
 
-.button_arsip {
-    background-color: white;
+.button_delete_archive {
+    background-color: #ffeeee;
     border: 1px solid rgb(197, 197, 197);
     border-radius: 5px;
-    margin: 8px;
     padding: 2px;
+    margin-right: 4px;
+    width: 50%;
+}
+
+.button_arsip_archive {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    padding: 2px;
+    width: 50%;
 }
 
 /* Largest Screen */

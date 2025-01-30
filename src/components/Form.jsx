@@ -33,8 +33,8 @@ function Form({onAddContentHandler}) {
                 <div className='w-[100%] px-5'>
                     <h1 className='mb-2 p-2 text-center'>Form Input</h1>
                     <form action='' className='' onSubmit={onSubmitHandler}>
-                        <Form_Title onAddTitle={onAddTitle} titleCount={titleCount}/>
-                        <Form_Body onAddBody={onAddBody}/>
+                        <Form_Title onAddTitle={onAddTitle} titleCount={titleCount} title={title}/>
+                        <Form_Body onAddBody={onAddBody} body={body}/>
                         <Form_Submit_Button onSubmitHandler={onSubmitHandler}/>
                     </form>
                 </div>

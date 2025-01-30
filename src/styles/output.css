@@ -575,8 +575,16 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .inline {
@@ -683,6 +691,11 @@ video {
   text-align: center;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -695,6 +708,11 @@ video {
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity, 1));
 }
 
 .text-slate-500 {
@@ -723,11 +741,12 @@ html {
 
 .notebox_item {
   background-color: azure;
-  border: 1px solid rgb(226, 226, 226);
+  border: 1px solid rgb(182, 182, 182);
   width: 230px;
   border-radius: 8px;
   margin: 8px;
   padding: 8px;
+  box-shadow: 1px 1px 5px rgb(209, 209, 209);
 }
 
 /* .notebox_list li {
@@ -740,18 +759,37 @@ html {
 } */
 
 .button_delete {
+  background-color: #ffeeee;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+  padding: 2px;
+  margin-right: 4px;
+  width: 70%;
+}
+
+.button_arsip {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(197, 197, 197);
   border-radius: 5px;
   padding: 2px;
+  width: 30%;
 }
 
-.button_arsip {
-  background-color: white;
+.button_delete_archive {
+  background-color: #ffeeee;
   border: 1px solid rgb(197, 197, 197);
   border-radius: 5px;
-  margin: 8px;
   padding: 2px;
+  margin-right: 4px;
+  width: 50%;
+}
+
+.button_arsip_archive {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+  padding: 2px;
+  width: 50%;
 }
 
 /* Largest Screen */
